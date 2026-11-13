@@ -189,6 +189,11 @@ h2 { font-family: var(--serif); font-weight: 400; font-size: clamp(28px, 3.2vw, 
 .team { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin-top: 40px; }
 .member { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 26px 22px; }
 .mono { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; font-family: var(--serif); font-size: 22px; color: #0b100f; margin-bottom: 18px; box-shadow: 0 0 0 5px var(--paper), 0 0 0 6px var(--line); }
+.member.stealth { border-style: dashed; display: flex; flex-direction: column; }
+.member.stealth .mono { background: transparent !important; box-shadow: 0 0 0 5px var(--paper), 0 0 0 6px var(--line); display: grid; place-items: center; color: var(--ink-faint); }
+.member.stealth .mono svg { width: 20px; height: 20px; }
+.member.stealth h3 { color: var(--ink-faint); font-style: italic; }
+.member.stealth .reveal-tag { margin-top: auto; padding-top: 14px; font: 500 11px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--gold); }
 .member h3 { font-family: var(--serif); font-weight: 400; font-size: 22px; margin: 0 0 2px; }
 .member .role { font: 500 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
 .member .city { display: block; margin-top: 5px; color: var(--ink-faint); letter-spacing: .06em; }
@@ -469,7 +474,7 @@ footer a:hover { color: var(--gold-soft); }
   <div class="wrap reveal">
     <div class="kicker">Team</div>
     <h2>The bench, the code and the robot, in one team.</h2>
-    <p class="sub">People who rarely sit at the same table, building one product.</p>
+    <p class="sub">Athelas Apothecary came out of the Physical AI for Science Hack in San Francisco. The rest of the team is being revealed soon.</p>
     <div class="stats">
       <div><b>1 weekend</b><span>from plate design to a robot run</span></div>
       <div><b>2 continents</b><span>Europe and the US: Munich and San Francisco</span></div>
@@ -481,20 +486,20 @@ footer a:hover { color: var(--gold-soft); }
         <p>Biochemist. From cancer drug screens and Cell Painting at Helmholtz Munich, via Deep Visual Proteomics at the Max Planck Institute of Biochemistry and OmicVision in Copenhagen, to spatial metabolomics at the University Hospital Tübingen.</p>
         <ul class="hl"><li>Built the open-source Drug Concentration Calculator</li><li>Winning team, Spira Labs challenge, Nucleate BioHackathon</li></ul>
       </div>
-      <div class="member">
-        <div class="mono" style="background:#4fb37f">E</div><h3>Erik</h3><div class="role">Software · Robotics<span class="city">San Francisco</span></div>
-        <p>Data scientist and software engineer who teaches robots new lab tasks. Built the Athelas web console and the software that turns a plate plan into a robot run.</p>
-        <ul class="hl"><li>Wrote most of the Athelas prototype code</li><li>Track winner at a previous Worldwide Studios hack with ZPeel, a robot skill that peels the seals off plates</li></ul>
+      <div class="member stealth">
+        <div class="mono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <h3>Teammate</h3><div class="role">Software · Robotics<span class="city">San Francisco</span></div>
+        <p class="reveal-tag">Revealed soon</p>
       </div>
-      <div class="member">
-        <div class="mono" style="background:#8f6bd6">R</div><h3>Ryan</h3><div class="role">Lab automation<span class="city">San Francisco</span></div>
-        <p>Synthetic biologist working on digital microfluidics and cloud labs: lab robots that AI agents can book and run remotely.</p>
-        <ul class="hl"><li>Builds a physical capability cloud for agentic biotech</li><li>Brings synthetic biology and microfluidics to the robot side</li></ul>
+      <div class="member stealth">
+        <div class="mono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <h3>Teammate</h3><div class="role">Lab automation<span class="city">San Francisco</span></div>
+        <p class="reveal-tag">Revealed soon</p>
       </div>
-      <div class="member">
-        <div class="mono" style="background:#c3cecb">S</div><h3>Suriyaa</h3><div class="role">Business development<span class="city">Munich</span></div>
-        <p>Business development with a developer's toolkit: an open-source developer since 2010. Brings partnerships, pilots and funding to Athelas.</p>
-        <ul class="hl"><li>58 open-source repositories and 5,000+ GitHub stars</li><li>Winning team, Spira Labs challenge, Nucleate BioHackathon: built MedInsight's website and AI interface</li></ul>
+      <div class="member stealth">
+        <div class="mono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
+        <h3>Teammate</h3><div class="role">Business development<span class="city">Munich</span></div>
+        <p class="reveal-tag">Revealed soon</p>
       </div>
     </div>
   </div>
